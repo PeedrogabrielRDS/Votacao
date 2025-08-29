@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Votação de Personagens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Vote no seu personagem favorito!</h1>
+  <p class="desc">Clique em "Votar" para somar um ponto. Depois, use "Mostrar Resultado" para descobrir quem está
+    vencendo.</p>
+
+  <section class="grid">
+    <!-- Mario -->
+    <article class="personagem" aria-label="Card do personagem Mario">
+      <h2>Mario</h2>
+      <img
+        src="https://play-lh.googleusercontent.com/p7rx-TDw8mSXmnN5oreMbOrC6FTumoRsnz8rDxUHL6-7xYtLlzcyj1GS8UKyBx5eJg"
+        alt="Imagem do personagem Mario" loading="lazy" />
+      <div class="footer">
+        <span class="contador" aria-live="polite">Votos: <span id="marioVotos">0</span></span>
+        <button id="btnMario" type="button" aria-describedby="marioVotos">Votar</button>
+      </div>
+    </article>
+
+    <!-- Sonic -->
+    <article class="personagem" aria-label="Card do personagem Sonic">
+      <h2>Sonic</h2>
+      <img
+        src="https://yt3.googleusercontent.com/L8Rm0h8FjQ0t9eGytIvaT8oV43v5K0tX6lmTndcbOpPOBoHcgITnuqK-1jUfNY0CTSUSul4ffg=s900-c-k-c0x00ffffff-no-rj"
+        alt="Imagem do personagem Sonic" loading="lazy" />
+      <div class="footer">
+        <span class="contador" aria-live="polite">Votos: <span id="sonicVotos">0</span></span>
+        <button id="btnSonic" type="button" aria-describedby="sonicVotos">Votar</button>
+      </div>
+    </article>
+
+  </section>
+
+  <button id="btnResultado" type="button">Mostrar Resultado</button>
+  <div class="resultado" role="status" aria-live="polite">
+    <p id="resultado">Sem resultados ainda. Faça alguns votos!</p>
+  </div>
+
+  <!-- Conecte o gabarito aqui -->
+  <script src="script.js"></script>
+</body>
+
+</html>
